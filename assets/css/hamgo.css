@@ -1,0 +1,116 @@
+body{
+    padding:0;
+    margin: 0;
+}
+a{
+    color: black;
+    text-decoration:none;
+}
+a:link{
+    
+}
+
+a:visited{
+
+}
+a:active{
+
+}
+
+.active{
+    border-bottom:2px solid orange; 
+}
+
+div{
+    /*border:1px solid black; */
+}
+
+.row{
+    width: 100%;
+}
+
+/*cols start*/
+.col-1{
+    float: left;
+    width:8.333333%; 
+}
+
+.col-2{
+    float: left;
+    width:16.666666%; 
+}
+.col-3{
+    float: left;
+    width:25%; 
+}
+.col-4{
+    float: left;
+    width:33.333333%; 
+}
+.col-5{
+    float: left;
+    width:41.666666%; 
+}
+.col-6{
+    float: left;
+    width:50%; 
+}
+.col-7{
+    float: left;
+    width:58.333333%; 
+}
+.col-8{
+    float: left;
+    width:66.666666%; 
+}
+.col-9{
+    float: left;
+    width:75%; 
+}
+.col-10{
+    float: left;
+    width:75%; 
+}
+.col-11{
+    float: left;
+    width:75%; 
+}
+.col-12{
+    float: left;
+    width:100%; 
+}
+/*cols end*/
+
+.container{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/*nav*/
+.nav{
+    background: #1FA464;
+    width: 100%;
+    padding:6px;
+    /*border-bottom:2px solid #666; */
+    box-shadow: 0px 2px 2px #555;
+}
+.nav a{
+    font-weight: bold;
+    padding: 5px;
+    color:white; 
+}
+
+.nav a:hover{
+    background: #198350;
+    /*border-radius:5px;*/
+}
+
+.fixed{
+    position:fixed; 
+    top:0;
+}
+
+.main{
+    padding-top:30px;
+}

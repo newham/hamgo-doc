@@ -1,9 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>hamgo-{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}-hamgo</title>
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/hamgo.css">
 </head>
+
 <body>
-	{{content}}
+	<!--nav-->
+	<div class="nav fixed">
+		<div class="container">
+			<lable>logo</lable>
+			<a id="nav_home" href="/">Home</a>
+			<a id="nav_doc" href="/doc/">Documention</a>
+			<a id="nav_about" href="/about/" >About</a>
+			<a id="nav_feedback" href="/feedback/">Feedback</a>
+		</div>
+	</div>
+	<div class="main">
+		<div class="container">
+			{{content}}
+		</div>
+	</div>
+	<!--js-->
+	<script>
+		var path = "{{page.url}}";
+		if (path == "{{ site.page.about }}") {
+			document.getElementById("nav_about").setAttribute('class','active'); 
+		}else if (path == "{{ site.page.doc }}") {
+			document.getElementById("nav_doc").setAttribute('class','active'); 
+		}else if (path == "{{ site.page.feedback }}") {
+			document.getElementById("nav_feedback").setAttribute('class','active'); 
+		}else {
+			document.getElementById("nav_home").setAttribute('class','active'); 
+		}
+	</script>
+
 </body>
+
 </html>
