@@ -173,6 +173,7 @@ func Bind(ctx *hamgo.WebContext) {
 |response json |√        |
 |json,form bind|√        |
 |html,template |√        |
+   
 More features are coming soon ... 
 
 ## More Documentation

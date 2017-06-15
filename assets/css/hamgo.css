@@ -3,22 +3,26 @@ body{
     margin: 0;
 }
 a{
-    color: black;
+    font-weight: bold;
+    color: #1FA464;
     text-decoration:none;
 }
 a:link{
-    
+    color: #1FA464;
 }
-
+a:hover{
+    color:#198350;
+    text-decoration:underline;
+}
 a:visited{
-
+    color: #1FA464;
 }
 a:active{
-
+    color: #1FA464;
 }
 
 .active{
-    border-bottom:2px solid orange; 
+    border-bottom:2px solid #D58A00; 
 }
 
 div{
@@ -104,6 +108,7 @@ div{
 .nav a:hover{
     background: #198350;
     /*border-radius:5px;*/
+    text-decoration:none;
 }
 
 .fixed{
