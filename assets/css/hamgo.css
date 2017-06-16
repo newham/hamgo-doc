@@ -21,6 +21,19 @@ a:active{
     color: #1FA464;
 }
 
+li{
+    margin: 0px;
+    padding: 5px;
+    float: left;
+    list-style:none;
+}
+
+ul{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
 .active{
     border-bottom:2px solid #D58A00; 
 }
@@ -95,7 +108,7 @@ div{
 .nav{
     background: #1FA464;
     width: 100%;
-    padding:6px;
+    padding:3px;
     /*border-bottom:2px solid #666; */
     box-shadow: 0px 2px 2px #555;
 }
@@ -104,11 +117,13 @@ div{
     padding: 5px;
     color:white; 
 }
-
 .nav a:hover{
-    background: #198350;
-    /*border-radius:5px;*/
     text-decoration:none;
+}
+.nav li:hover{
+    background: #198350;
+    border-radius:20px;
+    /*text-decoration:none;*/
 }
 
 .fixed{
@@ -118,4 +133,9 @@ div{
 
 .main{
     padding-top:30px;
+}
+
+.logo{
+    float: left;
+    padding: 5px;
 }
