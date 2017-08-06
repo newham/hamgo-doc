@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}-hamgo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/hamgo.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--nav-->
+    <!-- <div class="nav fixed">
+		<div class="container">
+			<div class="logo">
+				hamgo
+			</div>
+			<ul>
+                <li><a id="nav_home" href="{{site.baseurl}}/">Home</a></li>
+                <li><a id="nav_doc" href="{{site.baseurl}}/doc/">Documention</a></li>
+                <li><a id="nav_about" href="{{site.baseurl}}/about/" >About</a></li>
+                <li><a id="nav_feedback" href="{{site.baseurl}}/feedback/">Feedback</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main">
+		<div class="container">
+			<img src="{{ site.baseurl }}/assets/img/logo.png" width="50px" height="50px">
+			{{content}}
+		</div>
+	</div> -->
+    <!--js-->
+    <div class="bg-site top text-center">
+
+        <img src="{{ site.baseurl }}/assets/img/logo_green.png" class="logo-bg">
+
+
+
+        <h3>hamgo - A tiny MVC web framework based on <span class="label label-warning">golang</span> !</h3>
+        <div class="btn-group">
+            <!-- <a class="btn btn-default" href="{{site.baseurl}}/">Home</a> -->
+            <a class="btn btn-default" href="{{site.baseurl}}/doc/">Documention</a>
+            <a class="btn btn-default" href="{{site.baseurl}}/about/">About</a>
+            <a class="btn btn-default" href="{{site.baseurl}}/feedback/">Feedback</a>
+        </div>
+    </div>
+
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <p>You will find that build a website is <span class="label label-success"> so easy</span> by using hamgo !</p>
+                <h4><span class="text-primary">Try it right now!</span></h4>
+                {{content}}
+
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

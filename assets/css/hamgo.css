@@ -2,7 +2,7 @@ body{
     padding:0;
     margin: 0;
 }
-a{
+/* a{
     font-weight: bold;
     color: #1FA464;
     text-decoration:none;
@@ -14,12 +14,12 @@ a:hover{
     color:#198350;
     text-decoration:underline;
 }
-a:visited{
-    color: #1FA464;
-}
+ a:visited{
+    color: #fff;
+} 
 a:active{
     color: #1FA464;
-}
+} */
 
 li{
     margin: 0px;
@@ -34,74 +34,14 @@ ul{
     padding: 0px;
 }
 
-.active{
-    border-bottom:2px solid #D58A00; 
-}
+/* .active{
+    background: #D58A00;
+     border-bottom:2px solid #D58A00;  
+} 
+*/
 
 div{
     /*border:1px solid black; */
-}
-
-.row{
-    width: 100%;
-}
-
-/*cols start*/
-.col-1{
-    float: left;
-    width:8.333333%; 
-}
-
-.col-2{
-    float: left;
-    width:16.666666%; 
-}
-.col-3{
-    float: left;
-    width:25%; 
-}
-.col-4{
-    float: left;
-    width:33.333333%; 
-}
-.col-5{
-    float: left;
-    width:41.666666%; 
-}
-.col-6{
-    float: left;
-    width:50%; 
-}
-.col-7{
-    float: left;
-    width:58.333333%; 
-}
-.col-8{
-    float: left;
-    width:66.666666%; 
-}
-.col-9{
-    float: left;
-    width:75%; 
-}
-.col-10{
-    float: left;
-    width:75%; 
-}
-.col-11{
-    float: left;
-    width:75%; 
-}
-.col-12{
-    float: left;
-    width:100%; 
-}
-/*cols end*/
-
-.container{
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 /*nav*/
@@ -132,10 +72,48 @@ div{
 }
 
 .main{
-    padding-top:30px;
+    padding-top:60px;
 }
 
 .logo{
     float: left;
     padding: 5px;
+}
+
+.bg-site{
+    background: #1FA464;
+    color: white;
+}
+
+.top{
+    padding-top:20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 3px #aaa;
+}
+
+.logo-bg{
+    
+    width:100px;
+    height:100px ;
+    border:2px solid whitesmoke; 
+}
+
+.li-bg{
+    border:2px solid #1FA464; 
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav-top{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    background: white;
+    border-bottom:2px solid #1FA464; 
+}
+.btn-active{
+    background: #1FA464;
+    color: white;
 }
